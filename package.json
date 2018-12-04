@@ -1,0 +1,13 @@
+{
+  "name": "grocery-component",
+  "version": "1.0.0",
+  "description": "module to use grocery components between projects",
+  "main": "lib/index.js",
+  "repository": "https://github.com/GroceriStar/grocery-react-component",
+  "author": "Arthur Tkachenko",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
