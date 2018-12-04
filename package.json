@@ -1,5 +1,5 @@
 {
-  "name": "grocery-component",
+  "name": "@groceristar/grocery-component",
   "version": "1.0.0",
   "description": "module to use grocery components between projects",
   "main": "lib/index.js",
@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "build": "babel src -d lib",
-    "prepare": "yarn run build"
+    "prepare": "yarn run build",
+    "clean" : "rimraf something"
   },
   "devDependencies": {
     "@babel/cli": "7.2.0",
@@ -25,5 +26,8 @@
   "peerDependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
