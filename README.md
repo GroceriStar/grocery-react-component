@@ -21,3 +21,8 @@ https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-pub
 https://codeburst.io/how-to-create-and-publish-your-first-node-js-module-444e7585b738
 
 https://medium.com/@Powderham/sharing-react-components-between-separate-projects-self-hosting-with-git-installing-with-yarn-npm-d3275b64239c
+
+https://itsfoss.com/best-linux-screen-recorders/
+
+https://www.creative-tim.com/product/rotating-css-card
+https://github.com/codrops/DiagonalSlideshow/blob/master/index.html
