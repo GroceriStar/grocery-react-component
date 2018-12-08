@@ -1,3 +1,24 @@
+example how i use list:
+
+```
+// this is an ingredient for list
+import React, { Component, Fragment } from 'react';
+
+import List from './List/DefaultList'
+or import from separated module via npm logic...
+
+const IngredientsList = ({ ingredients, title }) => (
+
+  <Fragment>
+    <h2>{title}</h2>
+    <DefaultList items={ingredients} />
+  </Fragment>
+
+);
+```
+
+эта часть для курса, пока на нее забей.
+
 https://medium.com/@Powderham/sharing-react-components-between-separate-projects-self-hosting-with-git-installing-with-yarn-npm-d3275b64239c
 https://babeljs.io/docs/en/babel-preset-react
 https://www.useloom.com/share/e5f01b62ff2441b9a60659cb3b2caa74
