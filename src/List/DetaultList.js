@@ -2,7 +2,7 @@ import React from 'react';
 import List from './List';
 
 const Wrapper = ({ children }) => (
-  <ul>{children}</ul>;
+  <ul>{children}</ul>
 );
 
 const renderItem = ({ key, value }) => (
