@@ -11,7 +11,7 @@ const renderItem = ({ key, value }) => (
 
 const DefaultList = ({ items }) => (
   <Wrapper>
-    <List items={items} renderItem={renderItem}>
+    <List items={items} renderItem={renderItem} />
   </Wrapper>
 );
 
