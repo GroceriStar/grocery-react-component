@@ -8,7 +8,7 @@ class List extends Component {
     return (
       <Fragment>
         {items.map( (index, value) =>
-          <li>{renderItem}</li>
+          {renderItem}
         )}
       </Fragment>
     )
