@@ -1,6 +1,6 @@
 {
   "name": "@groceristar/grocery-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "module to use grocery components between projects",
   "main": "lib/index.js",
   "repository": "https://github.com/GroceriStar/grocery-react-component",
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "babel src -d lib",
     "prepare": "yarn run build",
-    "clean" : "rimraf something"
+    "clean": "rimraf something"
   },
   "devDependencies": {
     "@babel/cli": "7.2.0",
