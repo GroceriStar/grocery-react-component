@@ -9,7 +9,7 @@ const renderItem = ({ key, value }) => (
   <li key={key}>{value}</li>
 );
 
-const DefaultList = ({ items }) => (
+const DefaultList = ({ items, renderItem }) => (
   <Wrapper>
     <List items={items} renderItem={renderItem} />
   </Wrapper>
