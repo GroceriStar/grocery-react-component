@@ -1,6 +1,6 @@
 {
   "name": "@groceristar/grocery-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "module to use grocery components between projects",
   "main": "lib/index.js",
   "repository": "https://github.com/GroceriStar/grocery-react-component",
