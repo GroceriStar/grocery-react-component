@@ -17,8 +17,9 @@ const IngredientsList = ({ ingredients, title }) => (
 );
 ```
 
-for creating build run 'yarn clean && yarn build'
-tests, lint, coverage is not working at this moment
+ - for creating build run 'yarn clean && yarn build'
+ - tests, lint, coverage is not working at this moment
+
 ---
 
 <!---
