@@ -9,8 +9,10 @@
   "private": false,
   "scripts": {
     "build": "babel src -d lib",
-    "prepare": "yarn run build",
-    "clean" : "rimraf something"
+    "prepare": "yarn build",
+    "clean": "rimraf ./coverage ./lib",
+    "lint": "eslint src",
+    "prepublish": "yarn clean && yarn build"
   },
   "devDependencies": {
     "@babel/cli": "7.2.0",
