@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/%40groceristar%2Fgrocery-component.svg)](https://badge.fury.io/js/%40groceristar%2Fgrocery-component)
+
 example how i use list:
 
 ```
