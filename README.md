@@ -21,6 +21,7 @@ for creating build run 'yarn clean && yarn build'
 tests, lint, coverage is not working at this moment
 ---
 
+<!---
 эта часть для курса, пока на нее забей.
 
 https://medium.com/@Powderham/sharing-react-components-between-separate-projects-self-hosting-with-git-installing-with-yarn-npm-d3275b64239c
@@ -51,3 +52,5 @@ https://itsfoss.com/best-linux-screen-recorders/
 
 https://www.creative-tim.com/product/rotating-css-card
 https://github.com/codrops/DiagonalSlideshow/blob/master/index.html
+
+-->

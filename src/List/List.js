@@ -3,12 +3,13 @@ import React, { Component, Fragment } from 'react';
 class List extends Component {
 
   render() {
-    const { items, renderItem } = this.props;
+    const { items, children } = this.props;
 
     return (
       <Fragment>
-        {items.map( (index, value) =>
-          {renderItem}
+        {items.map( (value) =>
+          // console.log(value)
+          children(value)
         )}
       </Fragment>
     )
