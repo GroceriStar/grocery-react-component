@@ -138,6 +138,7 @@ Tasks:
 - [ ] [add tests]()
 - [ ] [make build working nice]()
 - [ ] ESLint resolver too https://medium.com/bootstart/why-you-should-use-babel-resolvers-210615fc41d
+- [ ] ignore lib folder, so it will be created only when we publish it on npm. we don't need it locally. delete from source, then only ignore, so it wouldn't be at github repo...
 ---
 
 
