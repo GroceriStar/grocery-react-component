@@ -57,3 +57,105 @@ https://www.creative-tim.com/product/rotating-css-card
 https://github.com/codrops/DiagonalSlideshow/blob/master/index.html
 
 -->
+
+
+<!---
+
+
+
+<p align="center">
+  <a href="https://travis-ci.org/eunikitin/modern-package-boilerplate">
+    <img src="https://travis-ci.org/eunikitin/modern-package-boilerplate.svg?branch=master" alt="Build Status">
+  </a>
+  <a href="https://coveralls.io/github/eunikitin/modern-package-boilerplate?branch=master">
+    <img src="https://coveralls.io/repos/github/eunikitin/modern-package-boilerplate/badge.svg?branch=master" alt="Coverage Status">
+  </a>
+  <a href="https://david-dm.org/eunikitin/modern-package-boilerplate">
+    <img src="https://david-dm.org/eunikitin/modern-package-boilerplate/status.svg" alt="dependencies Status">
+  </a>
+  <a href="https://david-dm.org/eunikitin/modern-package-boilerplate?type=dev">
+    <img src="https://david-dm.org/eunikitin/modern-package-boilerplate/dev-status.svg" alt="devDependencies Status">
+  </a>
+  <a href="https://david-dm.org/eunikitin/modern-package-boilerplate?type=peer">
+    <img src="https://david-dm.org/eunikitin/modern-package-boilerplate/peer-status.svg" alt="peerDependencies Status">
+  </a>
+</p>
+
+
+
+# Groceristar-fetch module
+    
+#### Synopsis
+  This is a module for using API like wrappers for getting food data for use in many projects. Just Like an database and fetch API in JS
+    
+[![Build Status](https://travis-ci.org/GroceriStar/groceristar-fetch.svg?branch=master)](https://travis-ci.org/GroceriStar/groceristar-fetch)
+[![npm version](https://badge.fury.io/js/%40groceristar%2Fgrocery-component.svg)](https://badge.fury.io/js/%40groceristar%2Fgrocery-component)
+
+
+
+
+[Introduction Article]()
+
+[Trello board with current tasks]()
+
+[Documentation Website]()
+
+
+#### Installation
+
+`npm install @groceristar/grocery-component`
+or
+`yarn add @groceristar/grocery-component`
+
+
+
+
+#### Code Example
+
+```
+const { List } = require('@groceristar/grocery-component')
+
+
+// returns 
+
+example
+```
+
+
+
+#### Tests
+
+`npm test`
+
+
+#### Contributors
+
+@vadim9999, @atherdon
+
+
+---
+Tasks:
+- [ ] [add tests]()
+- [ ] [make build working nice]()
+---
+
+
+
+[npm-run-script](https://docs.npmjs.com/cli/run-script)
+
+[Introduction to NPM Scripts](https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633)
+
+
+
+@TODO add tests
+
+Trello Board: 
+
+Sandbox Editor: 
+
+Created with help of this articles:
+https://codeburst.io/how-to-create-and-publish-your-first-node-js-module-444e7585b738
+https://medium.com/@adrianli/the-idiot-s-guide-to-publishing-a-react-component-to-npm-2b66b1ac03e0
+
+
+-->
