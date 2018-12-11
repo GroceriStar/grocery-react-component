@@ -9,10 +9,13 @@
   "private": false,
   "scripts": {
     "build": "babel src -d lib",
-    "prepare": "yarn build",
+    "prepare": "yarn clean && yarn build",
     "clean": "rimraf ./coverage ./lib",
     "lint": "eslint src",
-    "prepublish": "yarn clean && yarn build"
+    "prepublish": "yarn clean && yarn build",
+    "test":"jest",
+    "test:watch":"jest --watch",
+    "test:cover":"jest --watch",
   },
   "devDependencies": {
     "@babel/cli": "7.2.0",
