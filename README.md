@@ -84,10 +84,10 @@ https://github.com/codrops/DiagonalSlideshow/blob/master/index.html
 
 
 # Groceristar-fetch module
-    
+
 #### Synopsis
   This is a module for using API like wrappers for getting food data for use in many projects. Just Like an database and fetch API in JS
-    
+
 [![Build Status](https://travis-ci.org/GroceriStar/groceristar-fetch.svg?branch=master)](https://travis-ci.org/GroceriStar/groceristar-fetch)
 [![npm version](https://badge.fury.io/js/%40groceristar%2Fgrocery-component.svg)](https://badge.fury.io/js/%40groceristar%2Fgrocery-component)
 
@@ -116,7 +116,7 @@ or
 const { List } = require('@groceristar/grocery-component')
 
 
-// returns 
+// returns
 
 example
 ```
@@ -137,6 +137,7 @@ example
 Tasks:
 - [ ] [add tests]()
 - [ ] [make build working nice]()
+- [ ] ESLint resolver too https://medium.com/bootstart/why-you-should-use-babel-resolvers-210615fc41d
 ---
 
 
@@ -149,9 +150,9 @@ Tasks:
 
 @TODO add tests
 
-Trello Board: 
+Trello Board:
 
-Sandbox Editor: 
+Sandbox Editor:
 
 Created with help of this articles:
 https://codeburst.io/how-to-create-and-publish-your-first-node-js-module-444e7585b738
