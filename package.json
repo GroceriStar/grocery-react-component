@@ -9,10 +9,10 @@
   "private": false,
   "scripts": {
     "build": "babel src -d lib",
-    "prepare": "yarn clean && yarn build",
+    "prepare": "yarn clean",
     "clean": "rimraf ./coverage ./lib",
     "lint": "eslint src",
-    "prepublish": "yarn clean && yarn build",
+    "zprepublish": "yarn clean && yarn build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage"
@@ -23,8 +23,6 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "babel-plugin-module-resolver": "^3.1.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
