@@ -2,7 +2,7 @@ import React, {
   Component
 } from 'react'
 
-import IngredientList from '../Ingredients/IngredientList'
+import IngredientList from '~/IngredientList/IngredientList'
 
 
 // This component are layout for displaying data inside of the department list
@@ -19,7 +19,7 @@ class Item extends Component {
           {this.props.department}
         </h2>
         <IngredientList items={this.props.ingredients} />
-        
+
       </li>
     );
   }

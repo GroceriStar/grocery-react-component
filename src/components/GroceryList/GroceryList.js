@@ -1,14 +1,14 @@
 import React, { Fragment } from "react"
 import { Link } from 'react-router-dom'
+import uuidv1 from 'uuid/v1';
 
+import List from '~/List/List';
 import Item from './Item.js';
 
 
 
-import uuidv1 from 'uuid/v1';
 
-// @TODO ERRORR!!!
-import { List } from '@groceristar/grocery-component';
+
 
 //@TODO this file should be improved. Maybe splitted with structure.
 // i don't know how exactly it should looks, but not like this right know
@@ -34,18 +34,18 @@ const ManageGroceryLink = ({ id, title }) => (
   </Link>
 );
 
-//  ---- here actually our GL list started.
+//  ---- here is actually our GL list started.
 
 const Wrapper = ({ children }) => (
   <ul>{children}</ul>
 );
 
 
-    // <Item
-    //   key={shortid.generate()}
-    //   department={item.department}
-    //   ingredients={item.ingredients}
-    // />
+// <Item
+//   key={shortid.generate()}
+//   department={item.department}
+//   ingredients={item.ingredients}
+// />
 
 
 const RenderItem = ({ data, id }) => {

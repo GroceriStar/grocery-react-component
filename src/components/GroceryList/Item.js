@@ -2,7 +2,7 @@ import React, {
   Component
 } from 'react'
 
-import DepartmentList from '../DepartmentList/DepartmentList'
+import DepartmentList from '~/DepartmentList/DepartmentList'
 
 
 // This component are layout for displaying data inside of the department list
@@ -17,15 +17,13 @@ import DepartmentList from '../DepartmentList/DepartmentList'
 class Item extends Component {
 
   render() {
-    // <DepartmentList departments={this.props.departments} />
+
     return (
       <li key={this.props.key}>
         <h2>
           {this.props.name}
         </h2>
         <DepartmentList items={this.props.departments} />
-
-
       </li>
     );
   }
