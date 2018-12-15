@@ -7,7 +7,7 @@ class List extends Component {
 
     return (
       <Fragment>
-        {items.map( (value) =>
+        {items && items.map( (value) =>
           // console.log(value)
           children(value)
         )}
