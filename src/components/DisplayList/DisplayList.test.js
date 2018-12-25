@@ -81,16 +81,17 @@ describe("for <DisplayList /> we're showing different between shallow and mount"
 
     wrapper.debug();
 
-    const wrapper = shallow(<DisplayList data={ingredients1} />);
-    wrapper.debug();
+    // this code generate a build issue
+    // const wrapper = shallow(<DisplayList data={ingredients1} />);
+    // wrapper.debug();
 
-    const wrapper = shallow(
-      <div>
-        <DisplayList data={ingredients1} />
-      </div>
-    );
-
-    wrapper.debug();
+    // const wrapper = shallow(
+    //   <div>
+    //     <DisplayList data={ingredients1} />
+    //   </div>
+    // );
+    //
+    // wrapper.debug();
   });
 
   it("", () => {
