@@ -24,6 +24,9 @@ const IngredientsList = ({ ingredients, title }) => (
 
 ---
 
+- [ ] Make Display List tests works again
+
+
 <!---
 эта часть для курса, пока на нее забей.
 
