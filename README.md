@@ -6,8 +6,7 @@ example how i use list:
 // this is an ingredient for list
 import React, { Component, Fragment } from 'react';
 
-import List from './List/DefaultList'
-or import from separated module via npm logic...
+import { List, DefaultList, IngredientList } from '@groceristar/grocery-component';
 
 const IngredientsList = ({ ingredients, title }) => (
 
