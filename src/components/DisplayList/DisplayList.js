@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import uuidv1  from 'uuid/v1';
 
-import shortid from "shortid";
 
 //@TODO figure out and tell me if we're using this component or not
 
@@ -23,7 +23,7 @@ class DisplayList extends Component {
   render() {
     return (
       <ul className="ingredient list short">
-        {this.props.data.map(item => <li key={shortid.generate()}>{item}</li>)}
+        {this.props.data.map(item => <li key={uuidv1()}>{item}</li>)}
         {/*this.state.data.map(item => <li key={shortid.generate()}>{item}</li>)*/}
       </ul>
     );

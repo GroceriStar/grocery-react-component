@@ -1,19 +1,22 @@
 import React from "react";
+import ReactDOM from 'react-dom';
 import Enzyme, { shallow, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import DisplayList from "./DisplayList";
-import synon from "synon";
+import sinon from "sinon";
 
-import data from "@groceristar/groceristar-fetch/chickenKyiv";
+
+import { chickenKyiv } from "@groceristar/groceristar-fetch";
+
 
 Enzyme.configure({ adapter: new Adapter() });
 
 // describe("<DisplayList /> component shallow only methods ", () => {
 //   it("renders without crashing", () => {
-//     const recipe = data.getRecipe()[0];
+//     const recipe = chickenKyiv.getRecipe()[0];
 
 //     // const wrapper = shallow(<DisplayList />);
-//     const wrapper = shallow(<DisplayList data={recipe.ingredients} />);
+//     const wrapper = shallow(<DisplayList chickenKyiv={recipe.ingredients} />);
 
 //     expect(wrapper.contains(<ul></ul>)).toBe(true);
 //     // expect;
@@ -23,7 +26,7 @@ Enzyme.configure({ adapter: new Adapter() });
 // count child elements
 describe("<DisplayList /> count child elements", () => {
   it("renders li elements and compare their count", () => {
-    const recipe = data.getRecipe()[0];
+    const recipe = chickenKyiv.getRecipe()[0];
     const lenght = recipe.ingredients.lenght;
     const wrapper = shallow(<DisplayList data={recipe.ingredients} />);
 
@@ -70,7 +73,7 @@ describe("<DisplayList /> check if component have componentDidMount", () => {
 
 describe("for <DisplayList /> we're showing different between shallow and mount", () => {
   it("render as child or not", () => {
-    const recipe1 = data.getRecipe()[0];
+    const recipe1 = chickenKyiv.getRecipe()[0];
     const ingredients1 = recipe1.ingredients;
 
     const wrapper = mount(
@@ -109,8 +112,8 @@ describe("for <DisplayList /> we're showing different between shallow and mount"
 
 describe("<DisplayList /> set props or update state", () => {
   it("allows us to set props", () => {
-    const recipe1 = data.getRecipe()[0];
-    const recipe2 = data.getRecipe()[1];
+    const recipe1 = chickenKyiv.getRecipe()[0];
+    const recipe2 = chickenKyiv.getRecipe()[1];
     const ingredients1 = recipe1.ingredients;
     const ingredients2 = recipe2.ingredients;
     // const lenght = recipe.ingredients.lenght;
@@ -123,7 +126,7 @@ describe("<DisplayList /> set props or update state", () => {
   });
 
   it("set state", () => {
-    const recipe1 = data.getRecipe()[0];
+    const recipe1 = chickenKyiv.getRecipe()[0];
     const ingredients1 = recipe1.ingredients;
     const wrapper = mount(<DisplayList />);
     wrapper.setState({ data: ingredients1 });

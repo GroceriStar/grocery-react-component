@@ -22,6 +22,7 @@
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "@groceristar/groceristar-fetch": "^1.1.54",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-plugin-module-resolver": "^3.1.1",
@@ -29,8 +30,11 @@
     "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
     "jest": "^23.6.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "regenerator-runtime": "^0.13.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "sinon": "^7.2.3"
   },
   "peerDependencies": {
     "react": "^16.6.3",
