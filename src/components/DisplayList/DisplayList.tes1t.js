@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import EnzymeAdapter from "enzyme-adapter-react-16";
 import DisplayList from "./DisplayList";
 import sinon from "sinon";
 
@@ -9,7 +9,8 @@ import sinon from "sinon";
 import { chickenKyiv } from "@groceristar/groceristar-fetch";
 
 
-Enzyme.configure({ adapter: new Adapter() });
+// Setup enzyme's react adapter
+Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 // describe("<DisplayList /> component shallow only methods ", () => {
 //   it("renders without crashing", () => {
