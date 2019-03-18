@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import DefaultList from '~/List/DefaultList';
+import React, { Fragment } from 'react'
+import DefaultList from '~/List/DefaultList'
 
 const IngredientList = ({ items }) => {
   return (
@@ -8,6 +8,5 @@ const IngredientList = ({ items }) => {
     </Fragment>
   )
 }
-
 
 export default IngredientList

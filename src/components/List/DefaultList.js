@@ -1,19 +1,18 @@
-import React from 'react';
-import List from './List';
-import uuidv1 from 'uuid/v1';
+import React from 'react'
+import List from './List'
+import uuidv1 from 'uuid/v1'
 
 const Wrapper = ({ children }) => (
   <ul>{children}</ul>
-);
+)
 
 // @TODO yes, later, we should replace this "data" argument for a better name.
 // right now it's just works and i'm tired
 const RenderItem = ({ data, id }) => {
-
   // if( typeof(data) === 'string' ){
-    return (
-        <li key={id}>{data}</li>
-    )
+  return (
+    <li key={id}>{data}</li>
+  )
   // }
 
   // all other cases. we're assuming that we have an object with {key, value} structure
@@ -34,8 +33,8 @@ const DefaultList = ({ items }) => (
       {(data) =>
         <RenderItem data={data} key={uuidv1()} id={uuidv1()} />
       }
-      </List>
+    </List>
   </Wrapper>
-);
+)
 
-export default DefaultList;
+export default DefaultList

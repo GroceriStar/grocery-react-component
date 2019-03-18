@@ -1,20 +1,14 @@
-import React, { Fragment } from "react"
+import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import uuidv1 from 'uuid/v1';
+import uuidv1 from 'uuid/v1'
 
-import List from '~/List/List';
-import Item from './Item.js';
+import List from '~/List/List'
+import Item from './Item.js'
 
-
-
-
-
-
-//@TODO this file should be improved. Maybe splitted with structure.
+// @TODO this file should be improved. Maybe splitted with structure.
 // i don't know how exactly it should looks, but not like this right know
 // because it's more looking like layout file, not like a list component that i want to see
 // i want to see it similar to our DefaultList structure
-
 
 // right now this component just cover our current case,
 // but later i want to make it more extendable, so it can handle a different layouts that we'll need to have.
@@ -23,23 +17,22 @@ import Item from './Item.js';
 // details upon request
 
 const ViewGroceryLink = ({ id, title }) => (
-  <Link to={'/grocery/' + id }>
+  <Link to={'/grocery/' + id}>
     View "{title}" Template
   </Link>
-);
+)
 
 const ManageGroceryLink = ({ id, title }) => (
-  <Link to={'/grocery/' + id }>
+  <Link to={'/grocery/' + id}>
     View "{title}" Template
   </Link>
-);
+)
 
 //  ---- here is actually our GL list started.
 
 const Wrapper = ({ children }) => (
   <ul>{children}</ul>
-);
-
+)
 
 // <Item
 //   key={shortid.generate()}
@@ -47,23 +40,19 @@ const Wrapper = ({ children }) => (
 //   ingredients={item.ingredients}
 // />
 
-
 const RenderItem = ({ data, id }) => {
-
   return (
     <Fragment>
       ID: {data.id}
       Name: {data.name}
       <pre>
-      {data.departments}
+        {data.departments}
       </pre>
       <ViewGroceryLink id={data.id} title={data.name} />
       <hr />
     </Fragment>
 
-
   )
-
 }
 
 const GroceryList = ({ items }) => (
@@ -72,9 +61,8 @@ const GroceryList = ({ items }) => (
       {(data) =>
         <RenderItem data={data} key={uuidv1()} id={uuidv1()} />
       }
-      </List>
+    </List>
   </Wrapper>
-);
+)
 
-
-export default GroceryList;
+export default GroceryList

@@ -1,11 +1,8 @@
-import React, {  Fragment } from "react";
-import uuidv1 from 'uuid/v1';
+import React, { Fragment } from 'react'
+import uuidv1 from 'uuid/v1'
 
-import List from '~/List/List';
-import Item from './Item.js';
-
-
-
+import List from '~/List/List'
+import Item from './Item.js'
 
 // right now this component just cover our current case,
 // but later i want to make it more extendable, so it can handle a different layouts that we'll need to have.
@@ -18,7 +15,7 @@ import Item from './Item.js';
 
 const Wrapper = ({ children }) => (
   <ul>{children}</ul>
-);
+)
 
 const RenderItem = ({ data, id }) => {
   return (
@@ -40,9 +37,9 @@ const DepartmentList = ({ items }) => (
       {(data) =>
         <RenderItem data={data} key={uuidv1()} id={uuidv1()} />
       }
-      </List>
+    </List>
 
   </Wrapper>
-);
+)
 
-export default DepartmentList;
+export default DepartmentList

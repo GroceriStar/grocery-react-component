@@ -4,7 +4,6 @@ import React, {
 
 import DepartmentList from '~/DepartmentList/DepartmentList'
 
-
 // This component are layout for displaying data inside of the department list
 
 // @TODO i think we should change the name, because i think we have a list item, that store departments information.
@@ -15,9 +14,7 @@ import DepartmentList from '~/DepartmentList/DepartmentList'
 // right now we have a RenderItem at lists, as component, related to items.
 // so maybe we should update this component. not sure right now, don't remember about where we using it
 class Item extends Component {
-
-  render() {
-
+  render () {
     return (
       <li key={this.props.key}>
         <h2>
@@ -25,7 +22,7 @@ class Item extends Component {
         </h2>
         <DepartmentList items={this.props.departments} />
       </li>
-    );
+    )
   }
 }
 // @TODO i think we can use this.props.key, but on parent component
@@ -33,4 +30,4 @@ class Item extends Component {
 // so our small component will be clean and don't require changes, when
 // we'll connect data and id from database
 
-export default Item;
+export default Item

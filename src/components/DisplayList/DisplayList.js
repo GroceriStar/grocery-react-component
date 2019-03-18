@@ -1,8 +1,7 @@
-import React, { Component } from "react";
-import uuidv1  from 'uuid/v1';
+import React, { Component } from 'react'
+import uuidv1 from 'uuid/v1'
 
-
-//@TODO figure out and tell me if we're using this component or not
+// @TODO figure out and tell me if we're using this component or not
 
 class DisplayList extends Component {
   // constructor(props){
@@ -20,14 +19,14 @@ class DisplayList extends Component {
   //   this.getData();
   // }
 
-  render() {
+  render () {
     return (
-      <ul className="ingredient list short">
+      <ul className='ingredient list short'>
         {this.props.data.map(item => <li key={uuidv1()}>{item}</li>)}
-        {/*this.state.data.map(item => <li key={shortid.generate()}>{item}</li>)*/}
+        {/* this.state.data.map(item => <li key={shortid.generate()}>{item}</li>) */}
       </ul>
-    );
+    )
   }
 }
 
-export default DisplayList;
+export default DisplayList

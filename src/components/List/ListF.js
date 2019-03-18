@@ -1,15 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 const ListF = ({ items, children }) => {
-  
- if( items ) {
-  items.map( (value) =>
+  if (items) {
+    items.map((value) =>
     // console.log(value)
-    children(value)
-  )
- }  
-  
+      children(value)
+    )
+  }
 }
 
-
-export default ListF;
+export default ListF
