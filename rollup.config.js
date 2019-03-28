@@ -40,7 +40,6 @@ export default {
     }),
 
 
-
     // just fix in order to move json files to npm
     // copy({
     //   assets: [
